@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ososapp
+  labels:
+    app: ososapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ososapp
+  template:
+    metadata:
+      labels:
+        app: ososapp
+    spec:
+      containers:
+        - name: ososapp
+          image: docker.io/osamahassan/finalapp
+          ports:
+            - containerPort: 3000

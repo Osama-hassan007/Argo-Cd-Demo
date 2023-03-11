@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/Osama-hassan007/Argo-Cd-Demo.git
     targetRevision: HEAD #Last Commit on github
-    # path: dev
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: osos

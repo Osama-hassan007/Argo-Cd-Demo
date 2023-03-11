@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: argo-service
+spec:
+  selector:
+    app: ososapp
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
